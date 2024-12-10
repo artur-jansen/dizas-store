@@ -270,47 +270,23 @@ section {
     gap: 2em;
 }
 
-.instagram-media {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.instagram-media iframe {
-    width: 100% !important;
-    height: auto !important;
-    max-height: 500px;
-}
-
-.instagram-media span {
-    display: none !important;
-}
-
-#instagram-embed-0 {
-    width: 400px !important;
-    min-width: 200px !important;
-    max-width: 400px !important;
-}
-
-.sobre__galeria-fotos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2em;
-}
-
-#instagram-embed-1,
-#instagram-embed-2,
-#instagram-embed-3 {
-    max-height: 400px !important;
-    width: 400px !important;
-    max-width: 400px !important;
-}
 
 #recent-video-post {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #FCC000;
+    border-radius: 12px;
+    transform: rotate(1deg);
+    padding: 1em;
+}
+
+#recent-video-post video {
+    width: 400px;
+    height: 100%;
+    border: 4px solid #ffffff;
+    border-radius: 12px;
+    transform: rotate(-1deg);
 }
 
 .accordion {
@@ -356,27 +332,24 @@ section {
 .sobre__container-baixo h3 {
     font-size: 2.5em;
     text-align: center;
-    margin-bottom: 1.5em;
+    margin: 1em 0 1.5em 0;
 }
 
-.instagram-post-feed {
-    height: 400px;
+.sobre__galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.sobre__galeria-fotos-item img {
     width: 400px;
+    height: 400px;
     border-radius: 12px;
 }
 
-.instagram-post-feed:hover,
-.instagram-post-feed:focus {
-    transition: 1s;
+.sobre__galeria-fotos-item img:hover {
     transform: scale(1.01);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
-
-.instagram-post-reel {
-    height: 500px;
-    width: auto;
-    border: 2px solid black;
-    border-radius: 12px;
 }
 
 /* VANTAGENS */
@@ -722,7 +695,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    flex: 1 1 calc(33.333% - 100px); 
+    flex: 1 1 calc(33.333% - 100px);
     max-width: calc(33.333% - 10px);
     transition: transform 0.3s;
     margin: 10px;
@@ -777,7 +750,7 @@ section {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4; 
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
 
@@ -1017,10 +990,10 @@ section {
     /* DEPOIMENTOS */
     /* DEPOIMENTOS */
     .review {
-        flex: 1 1 calc(100% - 10px); 
+        flex: 1 1 calc(100% - 10px);
         max-width: calc(100% - 10px);
     }
-    
+
     .depoimentos__button-avaliacao {
         width: 60%;
     }
@@ -1115,37 +1088,18 @@ section {
         border-radius: 12px;
     }
 
-    .HoverCard{
-        display: none !important;
-    }
-
-    #instagram-embed-0 {
-        width: 300px !important;
-        min-width: 200px !important;
-        max-width: 300px !important;
-        max-height: 450px !important;
+    .accordion {
+        max-width: 1300px;
     }
 
     .sobre__container-baixo h3 {
         font-size: 1.5em;
     }
 
-    .instagram-post-feed {
-        height: 300px;
+    .sobre__galeria-fotos-item img {
         width: 300px;
-    }
-
-    .instagram-reel {
-        text-align: center;
-    }
-
-    .instagram-post-reel {
-        height: 400px;
-        width: auto;
-    }
-
-    .accordion {
-        max-width: 1300px;
+        height: 300px;
+        border-radius: 12px;
     }
 
     /* VANTAGENS */
@@ -1200,7 +1154,7 @@ section {
     }
 
     .review {
-        flex: 1 1 calc(100% - 10px); 
+        flex: 1 1 calc(100% - 10px);
         max-width: calc(100% - 10px);
     }
 
@@ -1210,7 +1164,7 @@ section {
         font-size: 16px;
     }
 
-    .review-text{
+    .review-text {
         font-size: 14px;
     }
 
