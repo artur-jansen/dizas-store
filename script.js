@@ -11,7 +11,6 @@ document.querySelectorAll('.colecao__btn').forEach((button) => {
     targetModal.removeAttribute('inert');
   });
 });
-
 document.querySelectorAll('.btn-close, [data-bs-dismiss="modal"]').forEach((closeButton) => {
   closeButton.addEventListener('click', () => {
     const modal = closeButton.closest('.colecao__modal');
@@ -19,14 +18,12 @@ document.querySelectorAll('.btn-close, [data-bs-dismiss="modal"]').forEach((clos
     modal.setAttribute('inert', '');
   });
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   async function fetchData() {
     const response = await fetch('dados.json');
     const data = await response.json();
     return data;
   }
-
   function fillModalContent(modalId, items) {
     const modalBody = document.getElementById(modalId);
     modalBody.innerHTML = items.map(item => `
@@ -39,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         `).join('');
   }
-
   fetchData().then(data => {
     fillModalContent('modal-body-camisas', data.camisas);
     fillModalContent('modal-body-calcas', data.calcas);
@@ -51,11 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error('Erro ao carregar os dados:', error);
   });
 });
-
 document.addEventListener('DOMContentLoaded', function () {
   const toggler = document.getElementById('navbar-toggler');
   const navbarCollapse = document.getElementById('navbarNav');
-
   function updateTogglerIcon() {
     if (navbarCollapse.classList.contains('show')) {
       toggler.classList.remove('toggler-icon-fechado');
@@ -65,23 +59,17 @@ document.addEventListener('DOMContentLoaded', function () {
       toggler.classList.add('toggler-icon-fechado');
     }
   }
-
   toggler.addEventListener('click', function () {
     setTimeout(updateTogglerIcon, 1);
   });
-
   const observer = new MutationObserver(updateTogglerIcon);
   observer.observe(navbarCollapse, { attributes: true, attributeFilter: ['class'] });
-
   updateTogglerIcon();
 });
-
 function initialize() {
   const placeId = "ChIJmYeuKyU5FAcRAP_MwT4gWJA";
   const apiKey = "AIzaSyDIbgfLkvt6ar7hnHAYmvl3rMzF0sR-WkQ";
-
   const service = new google.maps.places.PlacesService(document.createElement("div"));
-
   service.getDetails(
     {
       placeId: placeId,
@@ -97,18 +85,14 @@ function initialize() {
     }
   );
 }
-
 function displayReviews(reviews) {
   const reviewsContainer = document.getElementById("reviews");
-
   reviews.forEach((review) => {
     const reviewElement = document.createElement("div");
     reviewElement.classList.add("review");
-
     const profilePhoto = review.profile_photo_url
       ? `<img src="${review.profile_photo_url}" alt="Foto de ${review.author_name}" class="profile-photo">`
       : '<img src="https://via.placeholder.com/50" alt="Sem foto" class="profile-photo">';
-
     reviewElement.innerHTML = `
         <div class="review-header">
           ${profilePhoto}
@@ -119,13 +103,19 @@ function displayReviews(reviews) {
         </div>
         <p class="review-text">${review.text}</p>
       `;
-
     reviewsContainer.appendChild(reviewElement);
   });
 }
-
 const script = document.createElement("script");
 script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDIbgfLkvt6ar7hnHAYmvl3rMzF0sR-WkQ&libraries=places&callback=initialize`;
 script.async = true;
 script.defer = true;
 document.body.appendChild(script);
+window.addEventListener('scroll', function () {
+  const voltarTopoBtn = document.querySelector('.voltarTopo');
+  if (window.scrollY > 50) {
+      voltarTopoBtn.classList.add('scrolled');
+  } else {
+      voltarTopoBtn.classList.remove('scrolled');
+  }
+});

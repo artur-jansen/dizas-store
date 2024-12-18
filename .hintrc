@@ -1,7 +1,7 @@
 {
   "extends": [
-    "development"
-  ],
+    "development" 
+  ], 
   "hints": {
     "axe/keyboard": [
       "default",

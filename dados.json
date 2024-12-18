@@ -64,5 +64,5 @@
         { "imagem": "./assets/blazers/blazer2.jpg", "nome": "Blazer Slim Fit Cinza" },
         { "imagem": "./assets/blazers/blazer3.jpg", "nome": "Blazer Slim Fit Bege" },
         { "imagem": "./assets/blazers/blazer4.jpg", "nome": "Blazer Slim Fit Marrom" }
-    ]
+    ]  
 }

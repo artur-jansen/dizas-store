@@ -2,26 +2,37 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T8ZW5M49');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="language" content="pt-BR">
-    <title>Dizas Store - Moda Masculina</title>
+    <title>Dizas Store - Loja de Moda Masculina em Feira de Santana</title>
     <meta name="description"
-        content="Descubra a elegância e o conforto na nossa loja. Oferecemos desde roupas finas até roupas leves para o dia a dia, além de consultoria de moda e imagem personalizada para você se destacar em qualquer ocasião. Venha conferir a nossa o que temos de melhor!">
+        content="Encontre roupas masculinas elegantes e confortáveis na Dizas Store em Feira de Santana. Oferecemos consultoria de moda personalizada. Visite-nos e descubra nossas coleções exclusivas!">
     <meta name="keywords"
         content="moda, roupas, roupas masculinas, moda masculina, acessórios, loja online, camisa básica, código zero, loja de roupa feira de santana">
-    <meta name="author" content="DoisDev Team">
-    <meta property="og:title" content="Dizas Store - Moda Masculina">
+    <meta name="author" content="Time DoisDev">
+    <meta property="og:title" content="Dizas Store - Loja de Moda Masculina em Feira de Santana">
     <meta property="og:description"
-        content="Descubra a elegância e o conforto na nossa loja. Oferecemos desde roupas finas até roupas leves para o dia a dia, além de consultoria de moda e imagem personalizada para você se destacar em qualquer ocasião. Venha conferir a nossa o que temos de melhor!">
+        content="Encontre roupas masculinas elegantes e confortáveis na Dizas Store em Feira de Santana. Oferecemos consultoria de moda personalizada. Visite-nos e descubra nossas coleções exclusivas!">
     <meta property="og:image" content="http://www.dizasstore.com.br/favicon.ico">
     <meta property="og:url" content="http://www.dizasstore.com.br">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dizas Store - Moda Masculina">
+    <meta name="twitter:title" content="Dizas Store - Loja de Moda Masculina em Feira de Santana">
     <meta name="twitter:description"
-        content="Descubra a elegância e o conforto na nossa loja. Oferecemos desde roupas finas até roupas leves para o dia a dia, além de consultoria de moda e imagem personalizada para você se destacar em qualquer ocasião. Venha conferir a nossa o que temos de melhor!">
+        content="Encontre roupas masculinas elegantes e confortáveis na Dizas Store em Feira de Santana. Oferecemos consultoria de moda personalizada. Visite-nos e descubra nossas coleções exclusivas!">
     <meta name="twitter:image" content="http://www.dizasstore.com.br/favicon.ico">
     <link rel="canonical" href="http://www.dizasstore.com.br/">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -38,6 +49,11 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8ZW5M49" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">
@@ -68,7 +84,17 @@
             </div>
         </div>
     </nav>
-
+    <button class="whatsApp" id="whats-flutuante" aria-label="Direcionar para o WhatsApp">
+        <a class="whatsApp-link"
+            href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">
+            <i class="fab fa-whatsapp" id="icon-whats"></i>
+        </a>
+    </button>
+    <button class="voltarTopo" aria-label="Voltar para o topo da página">
+        <a class="voltarTopo-link" href="#home">
+            <i class="fa-solid fa-arrow-up" id="icon-seta"></i>
+        </a>
+    </button>
     <main>
         <section id="home" class="home">
             <h1 class="home__titulo">BEM-VINDO QUERIDO CLIENTE</h1>
@@ -81,7 +107,7 @@
                     autoconfiança.</p>
             </div>
             <div class="home__container-btn">
-                <button class="home__btn-contato">
+                <button class="home__btn-contato" id="whats-home">
                     <a class="home__btn-contato-link"
                         href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">
                         Entre Em Contato <i class="fab fa-whatsapp"></i>
@@ -225,7 +251,7 @@
                             chino!</p>
                     </div>
                 </div>
-                <button class="vantagens__btn-contato">
+                <button class="vantagens__btn-contato" id="whats-vantagem">
                     <a class="vantagens__btn-contato-link"
                         href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">
                         Entre Em Contato <i class="fab fa-whatsapp"></i>
@@ -279,7 +305,6 @@
                         Mais</button>
                 </div>
             </div>
-            <!-- Modals -->
             <div class="modal fade colecao__modal" id="modal-camisas" tabindex="-1" aria-labelledby="modalCamisasLabel"
                 inert>
                 <div class="modal-dialog">
@@ -375,13 +400,11 @@
                     </div>
                 </div>
             </div>
-            <!-- Modals -->
         </section>
         <section id="depoimentos" class="depoimentos">
             <h2 class="depoimentos__titulo">Depoimentos dos clientes</h2>
             <div class="depoimentos__container">
                 <div id="reviews">
-                    <!-- As avaliações serão carregadas aqui pela API -->
                 </div>
                 <button class="depoimentos__button-avaliacao">
                     <a class="depoimentos__button-avaliacao-link"
@@ -420,7 +443,10 @@
                         </div>
                         <iframe class="localizacao__mapa"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19739.08856260243!2d-38.96975150600157!3d-12.242915084135445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71439252bae8799%3A0x9058203ec1ccff00!2sDizas%20store%20-%20Moda%20masculina!5e1!3m2!1spt-BR!2sbr!4v1732882225712!5m2!1spt-BR!2sbr"
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa mostrando a localização da Dizas Store - Moda masculina"
+                            aria-label="Mapa mostrando a localização da Dizas Store - Moda masculina">
+                        </iframe>
                     </div>
                 </div>
                 <div class="localizacao__subcontainer-redes">
