@@ -188,7 +188,7 @@ section {
 }
 
 .home__btn-contato-link {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -421,7 +421,7 @@ section {
 .vantagens__btn-contato:focus {
     transition: 1s;
     padding: 0.6em;
-    background-color: #00fc0d66;
+    background-color: #25d36572;
     border-radius: 12px 0 12px 12px;
 }
 
@@ -552,7 +552,7 @@ section {
 }
 
 .colecao__item-titulo {
-    color: #000;
+    color: #ffffff;
     margin: 0;
 }
 
@@ -772,7 +772,7 @@ section {
 }
 
 .depoimentos__button-avaliacao-link {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     display: flex;
     align-items: center;
